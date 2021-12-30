@@ -1,12 +1,12 @@
 package com.dsmaster.api2;
 
-
+import com.alibaba.dubbo.config.annotation.Service;
 import com.dsmaster.core.DemoService;
 import com.dsmaster.core.GoodByeService;
 import org.springframework.stereotype.Component;
 
 @Component
-
+@Service(interfaceClass = GoodByeService.class)
 public class DemoServiceImpl implements GoodByeService {
     @Override
     public String goodBye(String msg) {
