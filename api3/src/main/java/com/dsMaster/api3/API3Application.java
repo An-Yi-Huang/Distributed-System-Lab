@@ -1,4 +1,4 @@
-package com.dsMaster.api3;
+package com.dsmaster.api3;
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;

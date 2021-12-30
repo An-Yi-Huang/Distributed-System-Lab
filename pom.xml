@@ -9,6 +9,7 @@
         <module>core</module>
         <module>api1</module>
         <module>api2</module>
+        <module>api3</module>
         <module>controller</module>
     </modules>
 

@@ -1,22 +1,22 @@
-package com.dsMaster.api3;
+package com.dsmaster.api3;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.dsMaster.core.ServiceCategory;
-import com.dsMaster.core.ProductInfo;
+import com.dsmaster.core.ServiceCategory;
+import com.dsmaster.core.ProductInfo;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
 @Component
 @Service(interfaceClass = ServiceCategory.class)
-public class FilterLocation implements ServiceCategory {
+public class FilterCategory implements ServiceCategory {
 
 
     @Override
     public ProductInfo[] getProductCategory(ProductInfo[] products, String category) {
         ArrayList<ProductInfo> list = new ArrayList<>();
         for (ProductInfo product : products){
-            if(category.equals(category.getCategory())){
+            if(category.equals(product.getCategory())){
                 list.add(product);
             }
         }

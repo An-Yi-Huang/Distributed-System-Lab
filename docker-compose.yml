@@ -41,6 +41,22 @@ services:
         - zookeeper
     networks:
         - spring-cloud-network
+  api3_1:
+    build: api3
+    environment: 
+        host: zookeeper
+    depends_on:
+        - zookeeper
+    networks:
+        - spring-cloud-network
+  api3_2:
+    build: api3
+    environment: 
+        host: zookeeper
+    depends_on:
+        - zookeeper
+    networks:
+        - spring-cloud-network
   controller:
     build: controller
     environment: 
