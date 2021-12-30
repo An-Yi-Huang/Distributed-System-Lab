@@ -14,12 +14,19 @@ public class ProxyService {
     @Reference(interfaceClass = GoodByeService.class,check = false)
     private GoodByeService goodByeService;
 
+    @Reference(interfaceClass = ServiceCategory.class,check = false)
+    private ServiceCategory serviceCategory;
+
     public String sayHello(String msg) {
         return demoService.sayHello(msg);
     }
 
     public String goodBye(String msg) {
         return goodByeService.goodBye(msg);
+    }
+
+    public String getProductCategory(ProductInfo[] products, String category) {
+        return serviceCategory.getProductCategory(ProductInfo[] products, String category);
     }
 
 }
