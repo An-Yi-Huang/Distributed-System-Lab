@@ -1,7 +1,9 @@
-package com.dsMaster.controller;
+package com.dsmaster.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.dsMaster.core.DemoService;
-import com.dsMaster.core.GoodByeService;
+import com.dsmaster.core.DemoService;
+import com.dsmaster.core.GoodByeService;
+import com.dsmaster.core.ProductInfo;
+import com.dsmaster.core.ServiceCategory;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -25,8 +27,8 @@ public class ProxyService {
         return goodByeService.goodBye(msg);
     }
 
-    public String getProductCategory(ProductInfo[] products, String category) {
-        return serviceCategory.getProductCategory(ProductInfo[] products, String category);
+    public ProductInfo[] getProductCategory(ProductInfo[] products, String category) {
+        return serviceCategory.getProductCategory(products, category);
     }
 
 }

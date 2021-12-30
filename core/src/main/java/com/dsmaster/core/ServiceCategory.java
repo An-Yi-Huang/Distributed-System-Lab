@@ -1,5 +1,5 @@
 package com.dsmaster.core;
 
-public class ServiceCategory {
+public interface ServiceCategory {
     ProductInfo[] getProductCategory(ProductInfo[] products, String category);  
 }
