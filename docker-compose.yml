@@ -59,6 +59,8 @@ services:
         - spring-cloud-network
   controller:
     build: controller
+    ports:
+      - 8081:8081
     environment: 
         host: zookeeper
     depends_on:
