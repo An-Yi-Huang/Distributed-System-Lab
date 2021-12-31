@@ -39,7 +39,17 @@ public class ProductList {
             add(new ProductInfo(28, "Cordless Phone System", 29.50, 16, "Digital", 70));
             add(new ProductInfo(29, "Wireless in-Ear Headphones (Black)", 158.00, 63, "Digital", 90));
             add(new ProductInfo(30, "Wireless Bluetooth Speaker", 25.99, 24, "Digital", 36));
-
+            //Pet & Beauty
+            add(new ProductInfo(41, "Fish Toys Moving Fish Toy for Cat", 10.99, 2345, "pet", 10);
+            add(new ProductInfo(42, "Woodbase Cat Litter 30 Litre", 13.98, 2374, "pet", 49);
+            add(new ProductInfo(43, "Cat Litter 6 Inlays Tray Liners Dust", 17.00, 350, "pet", 130);
+            add(new ProductInfo(44, "PetSafe Drinkwell", 11.98, 389, "pet", 50);
+            add(new ProductInfo(45, "large Cat Litter Tray Toilet Box", 32.99, 1661, "pet", 79);
+            add(new ProductInfo(46, "Garnier Sheet Masks Self-Care Collection", 12.18, 130, "beauty", 500);
+            add(new ProductInfo(47, "Assorted Mix Lip Balm Gift Set", 11.28, 8652, "beauty", 59);
+            add(new ProductInfo(48, "Reusable Makeup Remover Pads", 5.99, 9386, "beauty", 459);
+            add(new ProductInfo(49, "False Eyelashes", 8.99, 46, "beauty", 390);
+            add(new ProductInfo(50, "Jade Roller Gift Set", 16.95, 2890, "beauty", 308);
 
         }
     };
