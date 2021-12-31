@@ -1,7 +1,10 @@
 package com.dsmaster.controller;
+import java.util.List;
+
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.dsmaster.core.DemoService;
 import com.dsmaster.core.GoodByeService;
+import com.dsmaster.core.HomePageService;
 import com.dsmaster.core.ProductInfo;
 import com.dsmaster.core.ProductService;
 import com.dsmaster.core.ServiceCategory;
@@ -25,6 +28,9 @@ public class ProxyService {
     @Reference(interfaceClass = ProductService.class,check = false)
     private ProductService productService;
 
+    @Reference(interfaceClass = HomePageService.class, check = false)
+    private HomePageService homepageService;
+
     public String sayHello(String msg) {
         return demoService.sayHello(msg);
     }
@@ -39,6 +45,10 @@ public class ProxyService {
 
     public ProductInfo getProductContent(int id) {
         return productService.getProductContent(id);
+    }
+
+    public List<ProductInfo> getRecommendationProducts(){
+        return homepageService.getRecommendationProducts();
     }
 
 }
