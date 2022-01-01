@@ -1,5 +1,7 @@
 package com.dsmaster.core;
 
+import java.util.List;
+
 public interface ServiceCategory {
-    ProductInfo[] getProductCategory(ProductInfo[] products, String category);  
+    List<ProductInfo> getProductCategory(String category);  
 }

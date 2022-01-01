@@ -43,8 +43,8 @@ public class ProxyService {
         return goodByeService.goodBye(msg);
     }
 
-    public ProductInfo[] getProductCategory(ProductInfo[] products, String category) {
-        return serviceCategory.getProductCategory(products, category);
+    public List<ProductInfo> getProductCategory(String category) {
+        return serviceCategory.getProductCategory(category);
     }
 
     public ProductInfo getProductContent(int id) {
