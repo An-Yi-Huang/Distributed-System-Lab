@@ -9,7 +9,6 @@ import com.dsmaster.core.SearchService;
 import com.dsmaster.core.ServiceCategory;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Component
 public class ProxyService {
@@ -27,8 +26,8 @@ public class ProxyService {
     @Reference(interfaceClass = SearchService.class, check = false)
     private SearchService searchService;
 
-    public ProductInfo[] getProductCategory(ProductInfo[] products, String category) {
-        return serviceCategory.getProductCategory(products, category);
+    public List<ProductInfo> getProductCategory(String category) {
+        return serviceCategory.getProductCategory(category);
     }
 
     public ProductInfo getProductContent(int id) {

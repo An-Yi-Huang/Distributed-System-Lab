@@ -27,6 +27,12 @@ public class ControllerService {
         return proxyservice.getRecommendationProducts();
     }
 
+    // api3
+    @RequestMapping(value="/category/{msg}", method = RequestMethod.GET)
+    public List<ProductInfo> ProductCategory(@PathVariable("msg") String msg){
+        return proxyservice.getProductCategory(msg);
+    }
+
     // api4
     @RequestMapping(value="/search/{msg}", method = RequestMethod.GET)
     public List<ProductInfo> search(@PathVariable("msg") String msg){
