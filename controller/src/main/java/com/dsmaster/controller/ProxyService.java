@@ -7,6 +7,7 @@ import com.dsmaster.core.GoodByeService;
 import com.dsmaster.core.HomePageService;
 import com.dsmaster.core.ProductInfo;
 import com.dsmaster.core.ProductService;
+import com.dsmaster.core.SearchService;
 import com.dsmaster.core.ServiceCategory;
 
 import org.springframework.stereotype.Component;

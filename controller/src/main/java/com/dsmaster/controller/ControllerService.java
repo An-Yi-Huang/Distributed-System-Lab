@@ -28,7 +28,7 @@ public class ControllerService {
     }
 
     // api4
-    @RequestMapping(value="/search", method = RequestMethod.GET)
+    @RequestMapping(value="/search/{msg}", method = RequestMethod.GET)
     public List<ProductInfo> search(@PathVariable("msg") String msg){
         return proxyservice.searchProduct(msg);
     }

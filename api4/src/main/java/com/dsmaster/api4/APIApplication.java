@@ -11,9 +11,9 @@ import java.io.IOException;
 @SpringBootApplication
 // This annotation have the Dubbo work
 @EnableDubboConfiguration
-public class API1Application {
+public class APIApplication {
     public static void main(String[] args) throws IOException {
-       SpringApplication.run(API1Application.class, args);
+       SpringApplication.run(APIApplication.class, args);
     }
 
 }
