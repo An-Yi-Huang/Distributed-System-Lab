@@ -31,6 +31,9 @@ public class ProxyService {
     @Reference(interfaceClass = HomePageService.class, check = false)
     private HomePageService homepageService;
 
+    @Reference(interfaceClass = SearchService.class, check = false)
+    private SearchService searchService;
+
     public String sayHello(String msg) {
         return demoService.sayHello(msg);
     }
@@ -49,6 +52,10 @@ public class ProxyService {
 
     public List<ProductInfo> getRecommendationProducts(){
         return homepageService.getRecommendationProducts();
+    }
+
+    public List<ProductInfo> searchProduct(String msg) {
+        return searchService.search(msg);
     }
 
 }
