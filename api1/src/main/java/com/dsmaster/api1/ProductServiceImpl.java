@@ -1,6 +1,5 @@
 package com.dsmaster.api1;
 
-
 import com.dsmaster.core.ProductInfo;
 import com.dsmaster.core.ProductList;
 import com.dsmaster.core.ProductService;

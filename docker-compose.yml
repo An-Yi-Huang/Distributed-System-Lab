@@ -4,81 +4,44 @@ services:
   zookeeper:
     image: zookeeper
     restart: always
-    hostname: zookeeper
     ports:
       - 2181:2181
-    networks:
-        - spring-cloud-network
   api1_1:
     build: api1
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api1_2:
     build: api1
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api2_1:
     build: api2
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api2_2:
     build: api2
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api3_1:
     build: api3
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api3_2:
     build: api3
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api4_1:
     build: api4
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   api4_2:
     build: api4
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
-    networks:
-        - spring-cloud-network
   controller:
     build: controller
     ports:
       - 8081:8081
-    environment: 
-        host: zookeeper
     depends_on:
         - zookeeper
         - api1_1
@@ -89,8 +52,3 @@ services:
         - api3_2
         - api4_1
         - api4_2
-    networks:
-        - spring-cloud-network
-networks:
-    spring-cloud-network:
-        driver: bridge
