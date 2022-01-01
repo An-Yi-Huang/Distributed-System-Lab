@@ -85,6 +85,10 @@ services:
         - api1_2
         - api2_1
         - api2_2
+        - api3_1
+        - api3_2
+        - api4_1
+        - api4_2
     networks:
         - spring-cloud-network
 networks:
