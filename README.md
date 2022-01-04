@@ -8,5 +8,5 @@ http://localhost:8081/product/{id} <br>
 http://localhost:8081/category/{category} <br>
 http://localhost:8081/search/{name} <br>
 
-Link of the Presentation Video<br>
+Link of the presentation video<br>
 https://drive.google.com/file/d/1Q8b4SlJNuJ-vj2vLUYVDUnJDUlYueY7O/view?usp=sharing
