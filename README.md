@@ -1,3 +1,6 @@
+In this project, we use docker to immutate a distributed system with multiple servers.
+So, make sure you download docker before you run this project.
+
 To execute our project, we need to run two commands in the root directory <br>
 $ mvn clean compile install -Dmaven.test.skip=true <br>
 $ docker-compose up <br>
