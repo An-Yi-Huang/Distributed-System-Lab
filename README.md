@@ -1,4 +1,4 @@
-In this project, we use docker to immutate a distributed system with multiple servers.
+In this project, we use docker to imitate a distributed system with multiple servers.
 So, make sure you download docker before you run this project.
 
 To execute our project, we need to run two commands in the root directory <br>
